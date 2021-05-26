@@ -1,0 +1,171 @@
+h1{ 
+               font-size: 200%;
+		 }
+p { 
+               text-shadow:2px 5px 5px deepskyblue;
+               font-size: 300%;
+		 }
+		 h2{ font-size: 20px; }
+	 h3{font-size: 20px;
+	 }
+.div4{
+	position: absolute;
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			box-shadow: 15px -15px 30px dimgrey;
+			
+		
+		}
+		.div5{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			box-shadow: -15px -15px 20px dimgrey;
+			margin-left: 300px;
+			margin-top: -19px;
+		}
+		.div6{
+			
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			box-shadow: 15px 15px 10px dimgrey;
+		margin-left: 650px;
+			margin-top: -38px;
+		}
+
+h4{
+	font-size: 20px;
+}
+h6{
+	font-size: 20px;
+}
+.Ant{
+	position: relative;
+	animation-name: tegsh;
+	animation-timing-function: linear;
+	animation-duration: 10s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+}
+@keyframes tegsh{
+	0%{top: 0; left: 0;}
+	25%{top: 0; left: 300px;}
+	50%{top: 100px; left: 300px;}
+	75%{top: 100px; left: 0;}
+	100%{top: 0; left: 0;}
+}
+.skew .textbox{
+	margin-left: 75px;
+	background: lightgreen;
+	height: 100px;
+	width: 200px;
+	padding: 25px 0;
+	text-align: center;
+	font-size: 250%;
+	border: 3px solid darkgreen;
+	border-radius: 15px;
+	transform: skew(-45deg);
+	animation: ske1w 3s infinite linear;
+}
+@keyframes ske1w{
+	0%{transform: skewX(0deg);}
+	25%{transform: skewX(30deg);}
+	50%{transform: skewY(30deg);}
+	75%{transform: skewX(0deg);}
+	100%{transform: skewX(0);}
+}
+#cover{
+	display: flex;
+	margin-right: 10px;
+			width: 300px;
+			height: 200px;
+   }
+#cover img.bottom:hover{ opacity:0; transition-duration: 3s; transition-timing-function: linear; }
+#cover img.top:hover{ opacity: 0; transition-duration: 3s; transition-timing-function: linear; }
+#cover img.bottom1:hover{ opacity: 0;transition-duration: 3s; transition-timing-function: linear;}
+#cover img.top1:hover{ opacity: 0; transition-duration: 3s; transition-timing-function: linear;}
+#cover	img.bottom2:hover{opacity: 0;transition-duration: 3s; transition-timing-function: linear;}
+
+.scale{
+	display: flex;
+	margin-right: 10px;
+			width: 300px;
+			height: 200px;
+   }
+ img.zrg1:hover{ transform: scale(2, 2); transition-duration: 3s;}
+ img.zrg2:hover{transform: scale(2, 2 ); transition-duration: 3s;;}
+ img.zrg3:hover{transform: scale(2,2 ); transition-duration: 3s;}
+ img.zrg4:hover{transform: scale(2, 2); transition-duration: 3s;}
+
+
+
+ .multicolumns{
+ 	column-count: 2;
+ 	column-gap: 30px;
+ 	column-rule: 5px blue; 
+ }
+
+
+@media screen and (max-width: 480px){
+	.qries{
+		background-color: red;
+		width: 200px;
+		height: 100px;
+	}
+}
+@media screen and (min-width: -width: 481px) and (max-width: 720px) {
+	.qries{
+		background-color: orange;
+			width: 200px;
+		height: 100px;
+	}
+}
+@media screen and (min-width: 721px) and (max-width: 980px) {
+	.qries{
+		background-color: blue;
+			width: 200px;
+		height: 100px;
+	}
+}
+@media screen and (min-width: 981px) {
+	.qries{
+		background-color: black;
+			width: 200px;
+		height: 100px;
+	}
+}
+
+
+
+.flexbox{
+	width: 500px;
+	height: 300px;
+	display: flex;
+	margin-right: 10px;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	flex-flow: row-reverse;
+}
+.flexbox> div{
+	transition: 1s ease-out;
+	border: 2px solid lightgray;
+	width: 200px;
+	height: 300px;
+	padding: 20px;
+	background-color: orange;
+}
+.flexbox> div:hover{
+	width: 250px;
+	color: white;
+	font-weight: bold;
+}
+.flexbox > div:nth-child(1):hover{background-color: royalblue; }
+.flexbox > div:nth-child(2):hover{background-color: crimson; }
+.flexbox > div:nth-child(3):hover{background-color: darkgreen; }
